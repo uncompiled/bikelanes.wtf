@@ -1,17 +1,23 @@
 {
-  "name": "bikelanes.wtf",
+  "name": "client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "prettier-standard": "^8.0.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "react-geolocated": "^2.4.0",
+    "react-html5-camera-photo": "^1.2.9",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format": "prettier-standard 'src/**/*.js'"
   },
   "eslintConfig": {
     "extends": "react-app"
