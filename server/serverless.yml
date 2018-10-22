@@ -1,0 +1,14 @@
+service: api.bikelanes.wtf
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  region: us-east-1
+
+functions:
+  reportObstruction:
+    handler: handler.reportObstruction
+    events:
+      - http:
+        path: reportObstruction
+        method: get
