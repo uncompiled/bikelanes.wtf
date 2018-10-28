@@ -8,6 +8,14 @@ provider:
 
 functions:
   report:
-    handler: handler.report
+    handler: report.process
     events:
       - http: post report
+
+plugins:
+  - serverless-offline
+
+custom:
+  serverless-offline:
+    prefix: v1
+    port: 4000

@@ -2,8 +2,9 @@ import React, { Component } from "react"
 import { BrowserRouter as Router, Route } from "react-router-dom"
 import { geolocated } from "react-geolocated"
 
-import Home from "./Home"
-import Camera from "./Camera"
+import Header from "./Header"
+import Home from "./Routes/Home"
+import Camera from "./Routes/Camera"
 
 import "./App.css"
 
@@ -11,6 +12,7 @@ class App extends Component {
   render () {
     return (
       <div className="App">
+        <Header/>
         <Router>
           <React.Fragment>
             <Route path="/" exact component={Home} />
