@@ -3,6 +3,7 @@ import Camera from "react-html5-camera-photo"
 import "react-html5-camera-photo/build/css/index.css"
 
 import { backend } from '../../Config'
+import { Loader } from './Loader'
 
 const CameraContainer = ({
   isGeolocationAvailable,
@@ -10,7 +11,9 @@ const CameraContainer = ({
   positionError,
   coords
 }) => {
-  return <Camera onTakePhoto={dataUri => onTakePhoto(coords, dataUri)} />
+  return (coords)
+    ? <Camera onTakePhoto={dataUri => onTakePhoto(coords, dataUri)} />
+    : <Loader />
 }
 
 /**

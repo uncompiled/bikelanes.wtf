@@ -10,8 +10,19 @@ functions:
   report:
     handler: report.process
     events:
-      - http: post report
-
+      - http:
+          method: post
+          path: report
+          cors:
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+            allowCredentials: false
+            cacheControl: 'max-age=600, s-maxage=600, proxy-revalidate'
 plugins:
   - serverless-offline
 
