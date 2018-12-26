@@ -4,13 +4,24 @@
   "description": "Backend API for bikelanes.wtf",
   "main": "report.js",
   "dependencies": {
-    "image-data-uri": "^2.0.0"
+    "image-data-uri": "^2.0.0",
+    "node-fetch": "^2.3.0",
+    "twitter": "^1.7.1"
   },
   "devDependencies": {
+    "prettier-standard": "^8.0.1",
     "serverless": "^1.32.0",
     "serverless-offline": "^3.30.0"
   },
-  "scripts": {},
+  "prettier": {
+    "printWidth": 100,
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true
+  },
+  "scripts": {
+    "lint": "$(npm bin)/prettier-standard '**/*.js'"
+  },
   "author": "uncompiled",
   "license": "ISC"
 }

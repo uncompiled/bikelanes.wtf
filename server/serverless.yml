@@ -9,6 +9,12 @@ provider:
 functions:
   report:
     handler: report.process
+    environment:
+      CONSUMER_KEY: ${ssm:/bikelanes.wtf/CONSUMER_KEY}
+      CONSUMER_SECRET: ${ssm:/bikelanes.wtf/CONSUMER_SECRET}
+      ACCESS_TOKEN_KEY: ${ssm:/bikelanes.wtf/ACCESS_TOKEN_KEY}
+      ACCESS_TOKEN_SECRET: ${ssm:/bikelanes.wtf/ACCESS_TOKEN_SECRET}
+      LOCATIONIQ_TOKEN: ${ssm:/bikelanes.wtf/LOCATIONIQ_TOKEN}
     events:
       - http:
           method: post
