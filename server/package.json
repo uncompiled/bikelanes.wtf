@@ -20,7 +20,7 @@
     "singleQuote": true
   },
   "scripts": {
-    "lint": "$(npm bin)/prettier-standard '**/*.js'"
+    "format": "$(npm bin)/prettier-standard '**/*.js'"
   },
   "author": "uncompiled",
   "license": "ISC"

@@ -3,14 +3,15 @@ import { Link } from "react-router-dom"
 
 export const Home = () => {
   return (
-    <div>
+    <div className="home">
       <p>
-        This app will report obstructions in bicycle lanes. Take a picture
-        and we'll send the picture and your current location to the municipal
-        government.
+        This app will report obstructions in bicycle lanes. Take a picture and
+        we'll post it along your current location.
       </p>
 
-      <Link to="/camera">Report Obstruction</Link>
+      <Link to="/camera" className="button">
+        Report Obstruction
+      </Link>
     </div>
   )
 }

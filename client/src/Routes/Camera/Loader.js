@@ -1,3 +1,3 @@
-import React from 'react'
+import React from "react"
 
-export const Loader = () => <div>Initializing GPS...</div>
+export const Loader = () => <div className="loading">Initializing GPS...</div>
