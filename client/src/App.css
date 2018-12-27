@@ -7,7 +7,12 @@
 .home {
   position: absolute;
   bottom: 0;
-  padding: 3em;
+  min-width: 100vw;
+  margin-bottom: 3em;
+}
+
+.description {
+  margin: 3em;
 }
 
 .button {

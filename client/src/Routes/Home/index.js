@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 export const Home = () => {
   return (
     <div className="home">
-      <p>
+      <p className="description">
         This app will report obstructions in bicycle lanes. Take a picture and
         we'll post it along your current location.
       </p>
