@@ -5,8 +5,8 @@ export const Home = () => {
   return (
     <div className="home">
       <p className="description">
-        This app will report obstructions in bicycle lanes. Take a picture and
-        we'll post it along your current location.
+        This app reports obstructions in bicycle lanes. Take a picture and
+        we'll post it along with your current location.
       </p>
 
       <Link to="/camera" className="button">
