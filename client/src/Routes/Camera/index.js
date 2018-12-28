@@ -1,6 +1,6 @@
 import React from "react"
 import { toast } from "react-toastify"
-import Camera from "react-html5-camera-photo"
+import Camera, { FACING_MODES } from "react-html5-camera-photo"
 import "react-html5-camera-photo/build/css/index.css"
 
 import { backend } from "../../Config"
@@ -13,7 +13,11 @@ const CameraContainer = ({
   coords
 }) => {
   return coords ? (
-    <Camera onTakePhoto={dataUri => onTakePhoto(coords, dataUri)} />
+    <Camera
+      onTakePhoto={dataUri => onTakePhoto(coords, dataUri)}
+      idealFacingMode={FACING_MODES.ENVIRONMENT}
+      isImageMirror={false}
+    />
   ) : (
     <Loader />
   )
