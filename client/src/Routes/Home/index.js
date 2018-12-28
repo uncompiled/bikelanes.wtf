@@ -20,6 +20,10 @@ export const Home = () => {
         and turn on your camera.
       </p>
 
+      <p className="description">
+        iOS users should use Safari.
+      </p>
+
       <Link to="/camera" className="button">
         Report Obstruction
       </Link>

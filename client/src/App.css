@@ -15,11 +15,11 @@
   position: absolute;
   bottom: 0;
   min-width: 100vw;
-  margin-bottom: 25%;
+  margin-bottom: 5%;
 }
 
 .description {
-  margin: 3em;
+  margin: 1em 3em;
 }
 
 .button {
