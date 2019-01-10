@@ -44,17 +44,15 @@ async function onTakePhoto (coords, dataUri) {
       dataUri
     })
   }
+
+  const toastOptions = { position: toast.POSITION.BOTTOM_CENTER }
+
+  toast.info("Uploading image...", toastOptions)
   const response = await fetch(backend, options)
-  const data = await response.json()
   if (response.status === 200) {
-    toast.success("Submission successful!", {
-      position: toast.POSITION.BOTTOM_CENTER
-    })
-    console.log(data)
+    toast.success("Submission successful!", toastOptions)
   } else {
-    toast.error("Error: image could not be submitted.", {
-      position: toast.POSITION.BOTTOM_CENTER
-    })
+    toast.error("Error: image could not be submitted.", toastOptions)
   }
 }
 

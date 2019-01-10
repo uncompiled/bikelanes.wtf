@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
+import BrowserWarning from "./BrowserWarning"
+
 export const Home = () => {
   return (
     <div className="home">
@@ -16,13 +18,11 @@ export const Home = () => {
       </p>
 
       <p className="description">
-        When prompted, you will need to allow this website to access your current location
-        and turn on your camera.
+        When prompted, you will need to allow this website to access your
+        current location and turn on your camera.
       </p>
 
-      <p className="description">
-        iOS users should use Safari.
-      </p>
+      <BrowserWarning />
 
       <Link to="/camera" className="button">
         Report Obstruction
