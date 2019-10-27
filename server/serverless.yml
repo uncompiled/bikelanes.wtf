@@ -2,7 +2,7 @@ service: bikelanes-api
 
 provider:
   name: aws
-  runtime: nodejs8.10
+  runtime: nodejs10.x
   region: us-east-1
   stage: v1
 
